@@ -1,0 +1,54 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 20px auto;
+}
+.header * {
+    margin: 10px;
+}
+.recipes {
+    display: flex;
+    flex-direction: row;
+}
+.title {
+    font-size: large;
+}
+
+.card {
+    background-color: rgb(255, 200, 117);
+    width: 250px;
+    height: 250px;
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.rate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kol {
+    background: url(https://img.freepik.com/free-vector/restaurant-mural-wallpaper_23-2148695092.jpg?size=626&ext=jpg&ga=GA1.1.2116175301.1718323200&semt=ais_user);
+}
+.aa
+{
+    
+color: beige;
+
+background-color:olivedrab;
+}
+.wellcom{
+    background-color:rgb(122, 32, 32);
+    
+text-align: center;
+color: azure;
+}

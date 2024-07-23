@@ -1,0 +1,23 @@
+
+.kol {
+    background: url(https://img.freepik.com/free-vector/restaurant-mural-wallpaper_23-2148695092.jpg?size=626&ext=jpg&ga=GA1.1.2116175301.1718323200&semt=ais_user);
+}
+       .wellcome {
+    background-color:rgb(122, 32, 32);
+    margin-left: 45vw;
+    margin-right: 44.5vw;
+text-align: center;
+color: azure;
+}
+.foods{
+text-align: center;
+color: beige;
+margin-left: 45vw; 
+margin-right: 45vw;
+
+
+background-color:olivedrab ;
+}
+.homebutton{
+margin-left: 95vw;
+}

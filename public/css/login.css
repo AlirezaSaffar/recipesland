@@ -1,0 +1,38 @@
+.kol {
+    background: url(https://img.freepik.com/free-vector/restaurant-mural-wallpaper_23-2148695092.jpg?size=626&ext=jpg&ga=GA1.1.2116175301.1718323200&semt=ais_user);
+}
+.wellcome {
+    background-color:rgb(122, 32, 32);
+    margin-left: 45vw;
+    margin-right: 45vw;
+text-align: center;
+color: azure;
+}
+.bb {
+background-color:darkkhaki;
+margin-left: 47vw;
+width: 6vw;
+}
+.wellcom {
+margin-left: calc(50vw - 117px);
+color: blanchedalmond;
+background-color: darkkhaki;
+text-align: center;
+}
+.in {
+width: 150px;
+}
+.signup
+{
+text-align: center;
+color: beige;
+margin-left: 43vw;
+background-color:olivedrab;
+}
+@media(width<=900px){
+.bb{
+background-color:darkkhaki;
+margin-left: 47vw;
+width: auto;
+}
+}
