@@ -26,7 +26,7 @@ function getcookie(name) {
 
 var mycheck = getcookie("login");
 if (mycheck != " ") {
-  window.location.assign("http://localhost:3001/recipes");
+  window.location.assign("/recipes");
 }
 function login() {
   var p, u;
@@ -53,7 +53,7 @@ function login() {
     if(user==false){alert('your password is incorrect');}else{
         alert('wellcome');
         setcookie('login', user,5);
-        window.location.assign("http://localhost:3001/recipes");
+        window.location.assign("/recipes");
     }
   }).catch(err=>{});   
  
