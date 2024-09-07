@@ -23,7 +23,7 @@ function getcookie(name) {
   }
 var mycheck = getcookie("login");
 if (mycheck == " ") {
-  window.location.assign("http://localhost:3001/users/login");
+  window.location.assign("/users/login");
 }
 const urlSearchParams = new URLSearchParams(window.location.search);
 const params = Object.fromEntries(urlSearchParams.entries());
@@ -126,7 +126,7 @@ function funcrate(r){
 }
 
  function gohome(){
-  window.location.assign("http://localhost:3001/recipes");
+  window.location.assign("/recipes");
 }
 
 
