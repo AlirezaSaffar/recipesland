@@ -38,7 +38,7 @@ fetch("/recipes",{
 
 function exit(){
   setcookie("login", " ", -1);
-  window.location.assign("http://localhost:3001/users/login");
+  window.location.assign("/users/login");
 
 }
 
