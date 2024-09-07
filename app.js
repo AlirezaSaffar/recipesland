@@ -44,6 +44,10 @@ app.get("/users/fav", (req, res) => {
     res.sendFile(path.join(__dirname, "views", "fav.html"))
 })
 
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "views", "index.html"))
+})
+
 app.post("/api/recipe/fav",userscontroler.addfav)
 
 app.post("/api/users/signup", userscontroler.signup) 
