@@ -18,7 +18,7 @@ if(xx.indexOf(name)==0){
 }
 var mycheck= getcookie("login");
 if(mycheck!=" "){
-    window.location.assign('http://localhost:3001/recipes');
+    window.location.assign('/recipes');
 }
 function signup(){
     console.log("hey")
@@ -38,7 +38,7 @@ fetch("/api/users/signup", {
       }).then((res) => {console.log(res)});  
       if(name.length>=4 && pass.length>=4){
         alert("Your account has been successfully created");
-        window.location.assign("http://localhost:3001/users/login");
+        window.location.assign("/users/login");
       }else{
        alert("size of username and password must be more than 4 letters");
       }  
