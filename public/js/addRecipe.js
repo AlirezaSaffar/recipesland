@@ -54,5 +54,5 @@ body: JSON.stringify({
    document.getElementById("desp").value="";
   }
   function gohome(){
-    window.location.assign("http://localhost:3001/recipes");
+    window.location.assign("/recipes");
   }
