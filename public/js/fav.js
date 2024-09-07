@@ -17,7 +17,7 @@ function getcookie(name) {
   }
 var mycheck = getcookie("login");
 if (mycheck == " ") {
-  window.location.assign("http://localhost:3001/users/login");
+  window.location.assign("/users/login");
 }
 fetch("/users/fav",{
   method: "POST",
