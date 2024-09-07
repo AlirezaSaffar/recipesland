@@ -56,5 +56,5 @@ document.getElementById('ll').innerHTML= txt;
 
  })
  function gohome(){
-  window.location.assign("http://localhost:3001/recipes");
+  window.location.assign("/recipes");
 }
