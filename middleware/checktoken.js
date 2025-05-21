@@ -1,23 +1,20 @@
-const user = require('../models/user')
-const jwt = require('jsonwebtoken')
-function checkto(req,res,next){
+const jwt = require("jsonwebtoken");
 
-try{
+const authenticate = (req, res, next) => {
 
-  var name=  jwt.verify(req.body.token,"mysecretkey58963")
-  var us =  user.find();
-  var check=false;
-  for(i in us){
-      if(us[i]["username"]==name){check = true;}
-   
+  const token = req.header("Authorization")?.replace("Bearer ", "");
+  if (!token) {
+    return res.status(401).json({ message: "Access denied, token missing" });
   }
-  console.log(check)
-  if(check)next()
-}catch(err){
-    res.status(401).send();
-}
 
+  try {
 
-}
+    const decoded = jwt.verify(token, "mysecretkey58963");
+    req.verifieduser = decoded;  
+    next();
+  } catch (err) {
+    return res.status(401).json({ message: "Invalid or expired token" });
+  }
+};
 
-module.exports= checkto
+module.exports = authenticate;
